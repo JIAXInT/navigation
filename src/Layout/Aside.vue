@@ -1,7 +1,7 @@
 <template>
   <el-menu
     default-active="2"
-    class="el-menu-vertical-demo"
+    class="menu"
     @open="handleOpen"
     @close="handleClose"
   >
@@ -33,4 +33,8 @@ const handleClose = (key, keyPath) => {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.menu {
+  height: 100%;
+}
+</style>

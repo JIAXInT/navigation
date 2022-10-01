@@ -1,19 +1,17 @@
 <template>
-  <div class="common-layout">
+  <el-container class="container">
+    <el-header class="header">
+      <Header />
+    </el-header>
     <el-container>
-      <el-header>
-        <Header />
-      </el-header>
-      <el-container>
-        <el-aside width="200px">
-          <Aside />
-        </el-aside>
-        <el-main>
-          <Main />
-        </el-main>
-      </el-container>
+      <el-aside width="200px">
+        <Aside />
+      </el-aside>
+      <el-main>
+        <Main />
+      </el-main>
     </el-container>
-  </div>
+  </el-container>
 </template>
 
 <script setup>
@@ -24,7 +22,17 @@ import Main from "./Layout/Main.vue";
 </script>
 
 <style scoped>
-.common-layout {
-  background-color: #eeeeee;
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+}
+
+.header {
+  padding: 0;
+  margin: 0;
 }
 </style>

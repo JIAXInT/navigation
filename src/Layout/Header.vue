@@ -1,7 +1,7 @@
 <template>
   <el-menu
     :default-active="activeIndex"
-    class="el-menu-demo"
+    class="header"
     mode="horizontal"
     :ellipsis="false"
     @select="handleSelect"
