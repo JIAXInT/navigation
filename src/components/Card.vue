@@ -4,7 +4,6 @@
       <template #header>
         <div class="avatar">
           <el-avatar
-            class="avtar"
             shape="square"
             size="large"
             :src="item.url + '/favicon.ico'"
@@ -34,6 +33,7 @@ defineProps({
 .card {
   position: relative;
   margin: 10px;
+  cursor: pointer;
 }
 .avatar {
   display: inline-block;
@@ -43,7 +43,6 @@ defineProps({
 }
 .title {
   position: absolute;
-  max-width: 176px;
   display: inline-block;
   top: 5px;
   padding: 10px;

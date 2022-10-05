@@ -37,4 +37,11 @@ const handleSelect = (key, keyPath) => {
 .flex-grow {
   flex-grow: 1;
 }
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
 </style>

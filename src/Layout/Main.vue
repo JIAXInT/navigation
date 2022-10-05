@@ -1,23 +1,31 @@
 <template>
   <div class="main">
-    <Module :card-config="Top">置顶</Module>
-
-    <Module>文档</Module>
+    <div v-for="(item, index) in navigation" :id="item.config" :key="index">
+      <Module :card-config="item.config">{{ item.name }}</Module>
+    </div>
   </div>
 </template>
 
 <script setup>
 import { reactive, ref } from "vue";
+import navigation from "./../config/navigationConfig";
 import Module from "../components/Module.vue";
 
-import { Top } from "./../config/cardConfig";
+import {
+  Top,
+  Document,
+  Component,
+  Animation,
+  Design,
+} from "./../config/cardConfig";
 </script>
 
 <style scoped>
 .main {
   background-color: #fff;
-  width: 100%;
-  height: 100%;
+  height: 100vh;
+  overflow: scroll;
+  margin-top: 60px;
   padding-top: 20px;
 }
 </style>

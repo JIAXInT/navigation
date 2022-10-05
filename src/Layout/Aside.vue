@@ -1,14 +1,10 @@
 <template>
-  <el-menu
-    default-active="2"
-    class="menu"
-    @open="handleOpen"
-    @close="handleClose"
-  >
+  <el-menu :default-active="index" class="menu">
     <el-menu-item
-      index="index"
+      :index="index"
       v-for="(item, index) in navigation"
       :key="index"
+      @click="to(item)"
     >
       <el-icon><icon-menu /></el-icon>
       <span>{{ item.name }}</span>
@@ -25,16 +21,17 @@ import {
   Location,
   Setting,
 } from "@element-plus/icons-vue";
-const handleOpen = (key, keyPath) => {
-  console.log(key, keyPath);
-};
-const handleClose = (key, keyPath) => {
-  console.log(key, keyPath);
+
+const to = (item) => {
+  window.location.href = `#${item.config}`;
 };
 </script>
 
 <style scoped>
 .menu {
-  height: 100%;
+  position: fixed;
+  margin-top: 60px;
+  width: 200px;
+  height: 100vh;
 }
 </style>

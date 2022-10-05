@@ -3,7 +3,13 @@
     <slot></slot>
   </el-divider>
   <el-row>
-    <el-col :span="6" v-for="item in cardConfig" :key="item.title">
+    <el-col
+      :lg="6"
+      :md="8"
+      :sm="12"
+      v-for="item in cardConfig"
+      :key="item.title"
+    >
       <Card :item="item" @click="go(item)" />
     </el-col>
   </el-row>
