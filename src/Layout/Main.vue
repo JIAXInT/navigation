@@ -23,7 +23,6 @@ import {
 <style scoped>
 .main {
   background-color: #fff;
-  height: 100vh;
   overflow: scroll;
   margin-top: 60px;
   padding-top: 20px;

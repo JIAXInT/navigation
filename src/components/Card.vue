@@ -6,7 +6,7 @@
           <el-avatar
             shape="square"
             size="large"
-            :src="item.url + '/favicon.ico'"
+            :src="item.ico ? item.ico : `${item.url}/favicon.ico`"
           />
         </div>
         <div class="title">
@@ -24,7 +24,7 @@ import { reactive, ref } from "vue";
 
 defineProps({
   item: {
-    type: Array,
+    type: Object,
   },
 });
 </script>

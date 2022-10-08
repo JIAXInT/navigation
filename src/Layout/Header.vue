@@ -8,28 +8,46 @@
   >
     <el-menu-item index="0">LOGO</el-menu-item>
     <div class="flex-grow" />
-    <el-menu-item index="1">Processing Center</el-menu-item>
+    <el-menu-item index="1" @click="dialogVisible = true"
+      >添加导航</el-menu-item
+    >
     <el-sub-menu index="2">
       <template #title>Workspace</template>
       <el-menu-item index="2-1">item one</el-menu-item>
-      <el-menu-item index="2-2">item two</el-menu-item>
-      <el-menu-item index="2-3">item three</el-menu-item>
-      <el-sub-menu index="2-4">
-        <template #title>item four</template>
-        <el-menu-item index="2-4-1">item one</el-menu-item>
-        <el-menu-item index="2-4-2">item two</el-menu-item>
-        <el-menu-item index="2-4-3">item three</el-menu-item>
-      </el-sub-menu>
     </el-sub-menu>
   </el-menu>
+
+  <el-dialog
+    v-model="dialogVisible"
+    title="添加导航"
+    width="50%"
+    :before-close="handleClose"
+  >
+    <template #footer>
+      <span class="dialog-footer">
+        <el-button @click="dialogVisible = false">Cancel</el-button>
+        <el-button type="primary" @click="dialogVisible = false"
+          >Confirm</el-button
+        >
+      </span>
+    </template>
+  </el-dialog>
 </template>
 
 <script setup>
 import { ref } from "vue";
 
 const activeIndex = ref("1");
-const handleSelect = (key, keyPath) => {
-  console.log(key, keyPath);
+const dialogVisible = ref(false);
+
+const handleClose = (done) => {
+  ElMessageBox.confirm("Are you sure to close this dialog?")
+    .then(() => {
+      done();
+    })
+    .catch(() => {
+      // catch error
+    });
 };
 </script>
 
@@ -43,5 +61,9 @@ const handleSelect = (key, keyPath) => {
   left: 0;
   right: 0;
   z-index: 100;
+}
+
+.dialog-footer button:first-child {
+  margin-right: 10px;
 }
 </style>

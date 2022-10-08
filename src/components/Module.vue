@@ -26,7 +26,7 @@ defineProps({
 });
 
 const go = (item) => {
-  window.location.href = item.url;
+  window.open(item.url);
 };
 </script>
 
