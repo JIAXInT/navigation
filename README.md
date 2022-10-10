@@ -1,7 +1,24 @@
-# Vue 3 + Vite
+# 迅捷导航
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+- 专为开发者提供的免费、绿色、开源的开发者导航。
 
-## Recommended IDE Setup
+## 项目运行
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+```
+//克隆该项目
+git clone https://gitee.com/JIAXInT/navigation.git
+
+//安装依赖
+npm install
+
+// 运行项目
+npm run dev
+```
+
+## 项目介绍
+
+![image-20221010142007324](README/image-20221010142007324.png)
+
+介绍:专为开发者提供的免费、绿色、开源的开发者导航。
+
+技术栈:Vue3+Vite+Vue-router+Vuex+Element Plus

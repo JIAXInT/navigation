@@ -7,8 +7,9 @@
       <el-aside width="200px">
         <Aside />
       </el-aside>
-      <el-main>
+      <el-main class="main">
         <Main />
+        <div class="bottom"></div>
       </el-main>
     </el-container>
   </el-container>
@@ -35,29 +36,30 @@ import Main from "./Layout/Main.vue";
   margin: 0;
 }
 
+.bottom {
+  height: 50px;
+}
 #nprogress .bar {
   background-color: #f4f4f4 !important;
   height: 3px !important;
 }
 
 ::-webkit-scrollbar {
-  width: 4px;
-  height: 6px;
+  width: 6px;
 }
 
-::-webkit-scrollbar-corner {
-  display: block;
+::-webkit-scrollbar-track {
+  --webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  background: rgb(220, 220, 220);
+  --webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
-::-webkit-scrollbar-thumb,
-::-webkit-scrollbar-track {
-  border-right-color: transparent;
-  border-left-color: transparent;
-  background-color: rgba(0, 0, 0, 0.1);
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(220, 220, 220, 0.4);
 }
 </style>
