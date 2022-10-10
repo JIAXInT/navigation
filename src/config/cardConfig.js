@@ -1,10 +1,19 @@
+//置顶
 export const Top = [{
-    title: 'Justic',
-    info: 'justic的个人博客',
-    url: 'http://justicc.top/',
-    ico: 'https://portrait.gitee.com/uploads/avatars/user/2982/8948190_JIAXInT_1624177607.png!avatar200'
-}, ]
+        title: 'Justic',
+        info: 'justic的个人博客',
+        url: 'http://justicc.top/',
+        ico: 'https://portrait.gitee.com/uploads/avatars/user/2982/8948190_JIAXInT_1624177607.png!avatar200'
+    },
+    {
+        title: '迅捷导航',
+        info: '专为开发者提供的免费、绿色、开源的开发者导航',
+        url: 'http://nav.justicc.top/',
+        ico: '/public/ico.svg'
+    },
+]
 
+//文档
 export const Document = [{
         title: 'Vue',
         info: '渐进式JavaScript框架',
@@ -67,6 +76,8 @@ export const Document = [{
     },
 
 ]
+
+//组件
 export const Component = [{
         title: 'Element UI',
         info: 'Element，一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库',
@@ -79,7 +90,65 @@ export const Component = [{
         url: 'https://element-plus.gitee.io/zh-CN/',
         ico: 'https://element-plus.gitee.io/images/element-plus-logo-small.svg'
     },
+    {
+        title: 'Tdesign',
+        info: '腾讯开源的企业级设计体系，提供了统一价值观，一致的设计语言和视觉风格，和开箱即用的 UI 组件库',
+        url: 'https://tdesign.tencent.com/',
+    },
+    {
+        title: 'Ant Design',
+        info: '用于 Ant Design 设计体系的 React UI 组件库，用于研发企业级中后台产品。',
+        url: 'https://ant.design/index-cn',
+        ico: 'https://gw.alipayobjects.com/zos/rmsportal/rlpTLlbMzTNYuZGGCVYM.png'
+    }, {
+        title: 'Vant',
+        info: '轻量、可靠的移动端 Vue 组件库',
+        url: 'https://vant-contrib.gitee.io/vant/#/zh-CN',
+        ico: 'https://fastly.jsdelivr.net/npm/@vant/assets/logo.png'
+    }, {
+        title: 'Vant Weapp',
+        info: '轻量、可靠的小程序 UI 组件库',
+        url: 'https://vant-contrib.gitee.io/vant-weapp/#/home',
+        ico: 'https://fastly.jsdelivr.net/npm/@vant/assets/logo.png'
+    },
+    {
+        title: 'uni-ui',
+        info: '目前为止，在小程序和混合app领域，暂时还没有比 uni-ui 更高性能的框架。',
+        url: 'https://uniui.dcloud.net.cn/',
+        ico: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-a90b5f95-90ba-4d30-a6a7-cd4d057327db/d23e842c-58fc-4574-998d-17fdc7811cc3.png?v=1556263038788'
+    },
+    {
+        title: 'DataV',
+        info: 'Vue 大屏数据展示组件库',
+        url: 'http://datav.jiaminghi.com/',
+    },
 ]
 
-export const Animation = []
-export const Design = []
+
+//动画
+export const Animation = [{
+    title: 'Animate.css',
+    info: 'animate.css 是一个使用CSS3的animation制作的动画效果的CSS集合，里面预设了很多种常用的动画，且使用非常简单。',
+    url: 'http://www.animate.net.cn/',
+}, {
+    title: 'Hover.css',
+    info: 'Hover.css 是一套基于 CSS3 的鼠标悬停效果和动画，这些可以非常轻松的被应用到按钮、LOGO 以及图片等元素。',
+    url: 'http://ianlunn.github.io/Hover/',
+}, {
+    title: 'Magic.css',
+    info: 'magic-带64种动画效果的CSS3动画库。',
+    url: 'https://www.minimamente.com/project/magic/',
+    ico: 'https://www.minimamente.com/project/magic/assets/images/magic_big.png'
+}, ]
+
+//设计
+export const Design = [{
+    title: '花瓣',
+    info: '花瓣，陪你做生活的设计师',
+    url: 'https://huaban.com/'
+}, {
+    title: '站酷',
+    info: '站酷ZCOOL-设计师互动平台-打开站酷，发现更好的设计！',
+    url: 'https://www.zcool.com.cn/',
+    ico: 'https://files.codelife.cc/website/zcool.svg'
+}, ]

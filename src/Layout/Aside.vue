@@ -7,9 +7,7 @@
       @click="to(item)"
     >
       <el-icon><component :is="item.icon" /></el-icon>
-      <template #title>
-        <span>{{ item.name }}</span>
-      </template>
+      <span>{{ item.name }}</span>
     </el-menu-item>
   </el-menu>
 </template>
@@ -17,6 +15,13 @@
 <script setup>
 import { reactive, ref, onMounted, onUnmounted } from "vue";
 import navigation from "./../config/navigationConfig";
+import {
+  ArrowUpBold,
+  Document,
+  Grid,
+  PictureRounded,
+  MoonNight,
+} from "@element-plus/icons-vue";
 
 const to = (item) => {
   var anchor = document.getElementById(item.config);

@@ -27,10 +27,12 @@
   </el-menu>
 
   <el-dialog v-model="dialogVisible" title="添加导航" width="50%">
-    功能暂未开放，敬请期待
+    功能暂未上线，敬请期待！
+    <!-- <Add /> -->
     <template #footer>
       <span class="dialog-footer">
         <el-button @click="dialogVisible = false">返回</el-button>
+        <!-- <el-button type="primary" @click="addNewCard">添加</el-button> -->
       </span>
     </template>
   </el-dialog>
@@ -49,6 +51,8 @@ const toGitee = () => {
 const toGithub = () => {
   window.open("https://github.com/JIAXInT/navigation");
 };
+
+const addNewCard = () => {};
 </script>
 
 <style>
@@ -71,9 +75,5 @@ const toGithub = () => {
   color: #aaaaaa;
   margin-top: 35px;
   margin-bottom: 0;
-}
-
-.dialog-footer button:first-child {
-  margin-right: 10px;
 }
 </style>
